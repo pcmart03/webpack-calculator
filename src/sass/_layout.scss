@@ -1,0 +1,30 @@
+.calculator__body {
+  padding: 20px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calculator__display, .calculator__numpad-row {
+  height: 80px;
+}
+
+.calculator__numpad-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.calculator__display {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  text-align: end;
+}
+
+.calculator__numpad-button, .calculator__numpad-button--operator {
+  flex: 1 0 25%;
+}
+.calculator__numpad-button--double-size {
+  flex: 2 0 50%;
+}

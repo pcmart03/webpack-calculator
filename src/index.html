@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <div class="calculator__wrapper">
+    <div class="calculator__body">
+      <div class="calculator__display">0</div>
+      <div class="calculator__numpad">
+        <div class="calculator__numpad-row">
+          <div class="calculator__numpad-button--operator" data-op="clear">
+            <div class="calculator__numpad-button__inner">AC</div>
+          </div>
+          <div class="calculator__numpad-button--operator" data-op="neg">
+            <div class="calculator__numpad-button__inner">+/-</div>
+          </div>
+          <div class="calculator__numpad-button--operator" data-op="percent">
+            <div class="calculator__numpad-button__inner">%</div>
+          </div>
+          <div class="calculator__numpad-button--operator" data-op="divide">
+            <div class="calculator__numpad-button__inner">÷</div>
+          </div>
+        </div>
+        <div class="calculator__numpad-row">
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">9</div>
+          </div>
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">8</div>
+          </div>
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">7</div>
+            </div>
+          <div class="calculator__numpad-button--operator" data-op="mul">
+            <div class="calculator__numpad-button__inner">*</div>
+          </div>
+        </div>
+        <div class="calculator__numpad-row">
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">6</div>
+          </div>
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">5</div>
+          </div>
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">4</div>
+          </div>
+          <div class="calculator__numpad-button--operator" data-op="sub">
+            <div class="calculator__numpad-button__inner">-</div>
+          </div>
+        </div>
+        <div class="calculator__numpad-row">
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">3</div>
+          </div>
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">2</div>
+          </div>
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">1</div>
+          </div>
+          <div class="calculator__numpad-button--operator" data-op="add">
+            <div class="calculator__numpad-button__inner">+</div>
+          </div>
+        </div>
+        <div class="calculator__numpad-row">
+          <div class="calculator__numpad-button--double-size">
+            <div class="calculator__numpad-button__inner">0</div>
+          </div>
+          <div class="calculator__numpad-button">
+            <div class="calculator__numpad-button__inner">.</div>
+          </div>
+          <div class="calculator__numpad-button--operator" data-op="eq">
+            <div class="calculator__numpad-button__inner">=</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

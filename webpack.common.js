@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmltWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
@@ -40,8 +40,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new HtmltWebpackPlugin({
-      title: 'Webpack Calculator'
+    new HtmlWebpackPlugin({
+      title: 'Webpack Calculator',
+      template: 'src/index.html'
     }),
   ]
 };

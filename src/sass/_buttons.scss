@@ -1,0 +1,30 @@
+.calculator__numpad-button,
+.calculator__numpad-button--operator,
+.calculator__numpad-button--double-size {
+  cursor: pointer;
+  padding: 1px;
+  box-sizing: border-box;
+  
+  .calculator__numpad-button__inner {
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
+.calculator__numpad-button,
+.calculator__numpad-button--double-size {
+  .calculator__numpad-button__inner {
+    background-color: $light-blue;
+    color: $light-grey;
+  }
+}
+
+.calculator__numpad-button--operator {
+  .calculator__numpad-button__inner {
+    background-color: $dark-blue;
+    color: $light-grey;
+  }
+}

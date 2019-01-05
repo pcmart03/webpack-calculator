@@ -1,3 +1,9 @@
-div {
-  color: blue;
+body {
+  font-family: $font-stack;
+  font-size: $font-size;
+}
+
+.calculator__display {
+  font-size: $display-font-size;
+  color: lighten($dark-grey, 30%);
 }
