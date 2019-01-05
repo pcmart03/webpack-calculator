@@ -1,7 +1,14 @@
+.calculator__wrapper {
+  width: 100%;
+}
 .calculator__body {
   padding: 20px 10px;
   width: 100%;
   box-sizing: border-box;
+  @media screen and (min-width: 750px) {
+    width: 414px;
+    margin: 100px auto;
+  }
 }
 
 .calculator__display, .calculator__numpad-row {
