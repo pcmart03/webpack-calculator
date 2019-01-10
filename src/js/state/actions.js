@@ -11,15 +11,19 @@ function clear() {
 }
 
 function enterValue(payload) {
-    const newStr = appendChar(getters.newValue(), payload.value);
-    mutations.setNewValue(newStr);
-    mutations.setDisplayValue(newStr);
+  const newStr = appendChar(getters.newValue(), payload.value);
+  mutations.setNewValue(newStr);
+  mutations.setDisplayValue(newStr);
 }
 
 
 function performCalculation() {
   if (getters.prevValue() && getters.newValue() && getters.opperand()) {
-    const newValue = calculate(Number(getters.prevValue()), Number(getters.newValue()), getters.opperand());
+    const newValue = calculate(
+      Number(getters.prevValue()),
+      Number(getters.newValue()),
+      getters.opperand()).toString();
+    
     mutations.setPrevValue(newValue);
     mutations.setDisplayValue(newValue);
     mutations.setNewValue('');

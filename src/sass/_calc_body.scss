@@ -1,3 +1,7 @@
 .calculator__body {
   border: 1px solid $dark-blue;
 }
+
+.calculator__display {
+  overflow: scroll;
+}
